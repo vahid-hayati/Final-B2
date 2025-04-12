@@ -1,0 +1,50 @@
+section {
+    background: gray;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .item-1 {
+        background: yellow;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 4px solid black;
+        border-radius: 12px;
+        padding: 0.5rem;
+        margin: 0.5rem;
+
+        form {
+            background: yellowgreen;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 4px solid black;
+            border-radius: 12px;
+
+            button {
+                margin: 8px;
+            }
+        }
+    }
+
+    .item-2 {
+        background: burlywood;
+        border: 4px solid black;
+        border-radius: 12px;
+    }
+}
+
+@media only screen and (min-width:580px) {
+    section {
+        background-color: brown;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    section {
+        background-color: aquamarine;
+    }
+}

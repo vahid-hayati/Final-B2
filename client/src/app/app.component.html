@@ -1,0 +1,29 @@
+<section>
+  <div class="item-1">
+    <h1>{{message}}</h1>
+    <form [formGroup]="registerGroup">
+      <label>Email</label>
+      <input type="email" [formControl]="EmailCtrl">
+
+      <label>Name</label>
+      <input type="text" [formControl]="NameCtrl">
+
+      <label>Password</label>
+      <input type="password" [formControl]="PasswordCtrl">
+
+      <button (click)="register()" mat-flat-button color="parimary">registerGroup</button>
+    </form>
+  </div>
+
+  <div class="item-2">
+    <h1>{{numbers}}</h1>
+
+    <button (click)="sumNumber(4, 5, 8)" mat-flat-button color="primary">Sum Number</button>
+    
+    <h1>{{sum}}</h1>
+    
+    <button (click)="showNumber(16)" mat-flat-button color="primary">Show Number</button>
+    
+    <h1>{{number}}</h1>
+  </div>
+</section>
